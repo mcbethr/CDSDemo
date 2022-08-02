@@ -18,7 +18,9 @@ namespace ButtPillowCDS.Analysis
             EastingGridRangeTooHigh,
             NorthingGridRangeTooLow,
             NorthingGridRangeTooHigh,
-            MaxSensorsReached
+            MaxSensorsReached,
+            CannotRemoveSensor,
+            SensorDoesNotExist
         }
     
 

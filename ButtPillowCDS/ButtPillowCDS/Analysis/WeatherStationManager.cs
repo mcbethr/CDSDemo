@@ -11,7 +11,9 @@ namespace ButtPillowCDS.Analysis
     {
         static List<WeatherStation> _WeatherStations = new List<WeatherStation>();
 
-        static List<WeatherStation> WeatherStations {get { return _WeatherStations;} }
+        public static List<WeatherStation> WeatherStations {get { return _WeatherStations;} }
+
+        
 
         public static (bool,List<WeatherStationErrorsEnum>) AddWeatherStation(string MeterSquareIdentifier, int Easting, int Northing)
         {
@@ -21,7 +23,7 @@ namespace ButtPillowCDS.Analysis
             List<WeatherStationErrorsEnum> WeatherStationErrors = new List<WeatherStationErrorsEnum>();
             bool Success = false;
 
-            if (_WeatherStations.Count > WeatherSensorParameters.SensorIdMax)
+            if (_WeatherStations.Count == WeatherSensorParameters.SensorIdMax)
             {
                 WeatherStationErrors.Add(WeatherStationErrorsEnum.MaxSensorsReached);
             }
@@ -47,10 +49,11 @@ namespace ButtPillowCDS.Analysis
             }
 
             //if we reached here with no errors, we are good.  Create the Weather station
-            if (WeatherStationErrors.Count ==0)
+            if (WeatherStationErrors.Count == 0)
             {
 
                 WeatherStation NewWeatherStation = ConstructWeatherStation(MeterSquareIdentifier, Easting, Northing);
+                _WeatherStations.Add(NewWeatherStation);
                 Success = true;
 
             }
@@ -59,22 +62,51 @@ namespace ButtPillowCDS.Analysis
             return (Success, WeatherStationErrors);
         }
 
+        public static void ClearWeatherStations()
+        {
+            _WeatherStations.Clear();
+        }
+
+        public static (bool, List<WeatherStationErrorsEnum>) RemoveWeatherStation (int SensorID)
+        {
+            List<WeatherStationErrorsEnum> Errors = new List<WeatherStationErrorsEnum>();
+
+            int Success = _WeatherStations.RemoveAll(x => x.SensorID == SensorID);
+
+            if (Success >= 1)
+            {
+                Errors.Add(WeatherStationErrorsEnum.Ok);
+                return (true, Errors);
+            }
+            else
+            {
+                Errors.Add(WeatherStationErrorsEnum.SensorDoesNotExist);
+                return (false, Errors);
+            }
+        }
+
         private static WeatherStation ConstructWeatherStation(string MeterSquareIdentifier, int Easting, int Northing)
         {
 
-
-            WeatherStation NewWeatherStation = new WeatherStation();
+            int WeatherStationID = CreateWeatherStationID();
+            WeatherStation NewWeatherStation = new WeatherStation(WeatherStationID,MeterSquareIdentifier,Easting,Northing);
 
             return NewWeatherStation;
         }
 
+        
+
         private static int CreateWeatherStationID()
         {
-            int WeatherStationID = 0;
+            int WeatherStationID = 1;
 
             for (int i = WeatherSensorParameters.sensorIdMin; i < WeatherSensorParameters.SensorIdMax; i++)
             {
-                if(_WeatherStations.Any(x => x.SensorID != i))
+                if(_WeatherStations.Any(x => x.SensorID == i))
+                {
+                    continue;                  
+                }
+                else
                 {
                     WeatherStationID = i;
                     break;
