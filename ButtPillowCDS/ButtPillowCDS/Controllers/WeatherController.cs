@@ -14,9 +14,9 @@ namespace ButtPillowCDS.Controllers
 
         // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody]WeatherForecast value)
+        public void Post([FromBody]WeatherUpdate value)
         {
-
+            
 
         }
 

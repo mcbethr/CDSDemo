@@ -85,6 +85,73 @@ namespace ButtPillowCDS.Analysis
             }
         }
 
+        public static (bool, List<WeatherStationErrorsEnum>) InspectWeatherUpdate(WeatherUpdate WU)
+        {
+            bool success = false;
+            List<WeatherStationErrorsEnum> StationErrors = new List<WeatherStationErrorsEnum>();
+
+            //Check the time.  If the time on the System is in the future, generate an error
+            if (DateTime.Now < WU.Date)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.SensorDateTimeInFuture);
+            }
+
+            if (WU.TemperatureF < WeatherSensorParameters.ColdestMin)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.TemperatureTooCold);
+            }
+
+            if (WU.TemperatureF > WeatherSensorParameters.HottestMax)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.TemperatureTooHot);
+            }
+
+            if (WU.Northing > WeatherSensorParameters.HighestGrid)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.NorthingGridRangeTooHigh);
+            }
+
+            if (WU.Northing < WeatherSensorParameters.LowestGrid)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.NorthingGridRangeTooLow);
+            }
+
+            if (WU.Easting > WeatherSensorParameters.HighestGrid)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.EastingGridRangeTooHigh);
+            }
+
+            if (WU.Easting < WeatherSensorParameters.LowestGrid)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.EastingGridRangeTooLow);
+            }
+
+            if (WU.SensorID < WeatherSensorParameters.SensorIdMin)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.SensorDoesNotExist);
+            }
+
+            if (WU.SensorID >WeatherSensorParameters.SensorIdMax)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.SensorDoesNotExist);
+            }
+
+            //if we made it here with 0 station errors then return success true and OK
+            if (StationErrors.Count ==0)
+            {
+                success = true;
+                StationErrors.Add(WeatherStationErrorsEnum.Ok);
+            }
+
+            return (success, StationErrors);
+        }
+
+        public static void UpdateWeather(WeatherUpdate WU)
+        {
+            _WeatherStations.Find(x => x.SensorID == WU.SensorID).WeatherUpdates.Add(WU);
+
+        }
+
         private static WeatherStation ConstructWeatherStation(string MeterSquareIdentifier, int Easting, int Northing)
         {
 
@@ -100,7 +167,7 @@ namespace ButtPillowCDS.Analysis
         {
             int WeatherStationID = 1;
 
-            for (int i = WeatherSensorParameters.sensorIdMin; i < WeatherSensorParameters.SensorIdMax; i++)
+            for (int i = WeatherSensorParameters.SensorIdMin; i < WeatherSensorParameters.SensorIdMax; i++)
             {
                 if(_WeatherStations.Any(x => x.SensorID == i))
                 {

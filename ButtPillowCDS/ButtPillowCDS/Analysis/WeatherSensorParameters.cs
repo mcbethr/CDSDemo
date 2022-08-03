@@ -7,7 +7,7 @@ namespace ButtPillowCDS.Analysis
 {
     public static class WeatherSensorParameters
     {
-        public static int sensorIdMin = 1;
+        public static int SensorIdMin = 1;
         public static int SensorIdMax = 10;
         public static int ColdestMin = -128;
         public static int HottestMax = -134;

@@ -22,7 +22,7 @@ namespace WeatherStationUnitTests
         public void AddMaxWeatherStations()
         {
 
-            for (int i = WeatherSensorParameters.sensorIdMin; i <= WeatherSensorParameters.SensorIdMax; i++)
+            for (int i = WeatherSensorParameters.SensorIdMin; i <= WeatherSensorParameters.SensorIdMax; i++)
             {
                 WeatherStationManager.AddWeatherStation("AB", 1234, 5678);
 

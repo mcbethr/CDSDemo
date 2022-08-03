@@ -20,7 +20,8 @@ namespace ButtPillowCDS.Analysis
             NorthingGridRangeTooHigh,
             MaxSensorsReached,
             CannotRemoveSensor,
-            SensorDoesNotExist
+            SensorDoesNotExist,
+            SensorDateTimeInFuture
         }
     
 
@@ -29,8 +30,13 @@ namespace ButtPillowCDS.Analysis
         readonly int _Easting;
         readonly int _Northing;
 
+        List<WeatherUpdate> _WeatherUpdates = new List<WeatherUpdate>();
+        
+
         public int SensorID { get { return _sensorID; } }
         public string GridLocation { get { return (AssembleGrid()); } }
+
+        public List<WeatherUpdate> WeatherUpdates { get {return _WeatherUpdates; } }
 
         public WeatherStation(int SensorID, string MeterSquareIdentifier, int Easting, int Northing)
         {
@@ -38,6 +44,11 @@ namespace ButtPillowCDS.Analysis
             _MeterSquareIdentifier = MeterSquareIdentifier;
             _Easting = Easting;
             _Northing = Northing;
+        }
+
+        public void UpdateWeather(WeatherUpdate WU)
+        {
+            _WeatherUpdates.Add(WU);
         }
 
         private string AssembleGrid()

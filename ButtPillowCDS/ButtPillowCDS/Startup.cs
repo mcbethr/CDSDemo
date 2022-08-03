@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ButtPillowCDS.Analysis;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,6 +16,7 @@ namespace ButtPillowCDS
 {
     public class Startup
     {
+        public WeatherStationManager WSM;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
