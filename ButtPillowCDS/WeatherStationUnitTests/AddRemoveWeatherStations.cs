@@ -1,4 +1,6 @@
+using ButtPillowCDS;
 using ButtPillowCDS.Analysis;
+using ButtPillowCDS.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -72,6 +74,45 @@ namespace WeatherStationUnitTests
             WeatherStationManager.RemoveWeatherStation(2);
             WeatherStationManager.AddWeatherStation("GH", 3333, 3333);
             Assert.AreEqual(2, WeatherStationManager.WeatherStations[2].SensorID);
+        }
+
+        [TestMethod]
+        public void AddWeatherStationAndUpdateWeatherSuccess()
+        {
+            WeatherUpdate WU = new WeatherUpdate();
+            WU.Date = DateTime.Now;
+            WU.Easting = 1111;
+            WU.Northing = 1111;
+            WU.SensorID = 1;
+            WU.MeterSquareIdentifier = "AB";
+            WU.TemperatureF = 72;
+
+
+            WeatherStationManager.AddWeatherStation("AB", 1111, 1111);
+            WeatherController WC = new WeatherController();
+            WC.Post(WU);
+            int result = WeatherStationManager.WeatherStations[0].WeatherUpdates[0].TemperatureF;
+            Assert.AreEqual(WU.TemperatureF, result);
+
+        }
+
+        [TestMethod]
+        public void UpdateWeatherStationThatDoesNotExist()
+        {
+            WeatherUpdate WU = new WeatherUpdate();
+            WU.Date = DateTime.Now;
+            WU.Easting = 1111;
+            WU.Northing = 1111;
+            WU.SensorID = 2;
+            WU.MeterSquareIdentifier = "AB";
+            WU.TemperatureF = 72;
+
+
+            WeatherStationManager.AddWeatherStation("AB", 1111, 1111);
+            WeatherController WC = new WeatherController();
+            WC.Post(WU);
+
+
         }
 
         [TestCleanup]

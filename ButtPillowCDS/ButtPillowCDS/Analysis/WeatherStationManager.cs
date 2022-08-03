@@ -136,6 +136,12 @@ namespace ButtPillowCDS.Analysis
                 StationErrors.Add(WeatherStationErrorsEnum.SensorDoesNotExist);
             }
 
+            ///Then the sensor doesn't exist
+            if (CheckSensorListForSensorID(WU.SensorID) == false)
+            {
+                StationErrors.Add(WeatherStationErrorsEnum.SensorDoesNotExist);
+            }
+
             //if we made it here with 0 station errors then return success true and OK
             if (StationErrors.Count ==0)
             {
@@ -169,7 +175,7 @@ namespace ButtPillowCDS.Analysis
 
             for (int i = WeatherSensorParameters.SensorIdMin; i < WeatherSensorParameters.SensorIdMax; i++)
             {
-                if(_WeatherStations.Any(x => x.SensorID == i))
+                if( CheckSensorListForSensorID(i) == true)
                 {
                     continue;                  
                 }
@@ -181,6 +187,18 @@ namespace ButtPillowCDS.Analysis
             }
 
             return WeatherStationID;
+        }
+
+        private static bool CheckSensorListForSensorID(int SensorID)
+        {
+            if (_WeatherStations.Any(x => x.SensorID == SensorID))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         
     }

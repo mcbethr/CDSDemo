@@ -16,7 +16,6 @@ namespace ButtPillowCDS
 {
     public class Startup
     {
-        public WeatherStationManager WSM;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

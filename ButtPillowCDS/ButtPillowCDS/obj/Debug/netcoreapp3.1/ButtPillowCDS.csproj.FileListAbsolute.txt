@@ -7,7 +7,6 @@ C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\ButtPillowCD
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\ButtPillowCDS.runtimeconfig.dev.json
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\ButtPillowCDS.dll
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\ButtPillowCDS.pdb
-C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.csprojAssemblyReference.cache
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.csproj.CoreCompileInputs.cache
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.MvcApplicationPartsAssemblyInfo.cache
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.AssemblyInfoInputs.cache
