@@ -1,6 +1,5 @@
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\ButtPillowCDS.exe
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
@@ -90,7 +89,6 @@ C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\zh
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\ButtPillowCDS.dll
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\ButtPillowCDS.pdb
-C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.csprojAssemblyReference.cache
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.csproj.CoreCompileInputs.cache
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.AssemblyInfoInputs.cache
 C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.AssemblyInfo.cs
@@ -202,3 +200,8 @@ C:\code\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherSta
 C:\code\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.dll
 C:\code\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.pdb
 C:\code\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.genruntimeconfig.cache
+C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\ButtPillowCDS.deps.json
+C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\ButtPillowCDS.runtimeconfig.json
+C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\bin\Debug\netcoreapp3.1\ButtPillowCDS.runtimeconfig.dev.json
+C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.csproj.AssemblyReference.cache
+C:\Code\CDSDemo\ButtPillowCDS\WeatherStationUnitTests\obj\Debug\netcoreapp3.1\WeatherStationUnitTests.GeneratedMSBuildEditorConfig.editorconfig

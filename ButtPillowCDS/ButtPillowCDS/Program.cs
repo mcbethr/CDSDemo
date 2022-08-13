@@ -11,6 +11,17 @@ namespace ButtPillowCDS
 {
     public class Program
     {
+
+        public enum IceCream
+        {
+            MintChip,
+            Chocolate,
+            NoIceCream
+
+        }
+
+        IceCream iceCream;
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -22,5 +33,27 @@ namespace ButtPillowCDS
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        public static void IceCreamMethod(IceCream iceCream)
+        {
+            if (iceCream == Program.IceCream.MintChip)
+            {
+                GetIceCream(Program.IceCream.MintChip);
+
+            }
+            else if (iceCream == Program.IceCream.Chocolate)
+            {
+                GetIceCream(Program.IceCream.Chocolate);
+            }
+            else
+            {
+                GetIceCream(Program.IceCream.NoIceCream);
+            }
+        }
+
+        private static void GetIceCream(IceCream iceCream)
+        {
+            ///Fake method to illustrate the point
+        }
     }
 }

@@ -1,6 +1,5 @@
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\ButtPillowCDS.exe
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\ButtPillowCDS.deps.json
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\bin\Debug\netcoreapp3.1\ButtPillowCDS.runtimeconfig.json
@@ -13,7 +12,6 @@ C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCD
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.AssemblyInfo.cs
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.RazorTargetAssemblyInfo.cache
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\staticwebassets\ButtPillowCDS.StaticWebAssets.Manifest.cache
-C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\staticwebassets\ButtPillowCDS.StaticWebAssets.xml
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.dll
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.pdb
 C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.genruntimeconfig.cache
@@ -37,3 +35,5 @@ C:\code\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.RazorT
 C:\code\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.dll
 C:\code\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.pdb
 C:\code\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.genruntimeconfig.cache
+C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.csproj.AssemblyReference.cache
+C:\Code\CDSDemo\ButtPillowCDS\ButtPillowCDS\obj\Debug\netcoreapp3.1\ButtPillowCDS.GeneratedMSBuildEditorConfig.editorconfig

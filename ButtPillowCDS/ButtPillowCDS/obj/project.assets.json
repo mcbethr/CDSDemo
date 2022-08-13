@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\ryanm\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\code\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj",
+      "projectUniqueName": "C:\\Code\\CDSDemo\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj",
       "projectName": "ButtPillowCDS",
-      "projectPath": "C:\\code\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj",
-      "packagesPath": "C:\\Users\\ryanm\\.nuget\\packages\\",
-      "outputPath": "C:\\code\\ButtPillowCDS\\ButtPillowCDS\\obj\\",
+      "projectPath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\ButtPillowCDS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ryanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

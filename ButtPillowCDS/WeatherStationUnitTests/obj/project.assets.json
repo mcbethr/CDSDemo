@@ -5671,19 +5671,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ryanm\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\code\\ButtPillowCDS\\WeatherStationUnitTests\\WeatherStationUnitTests.csproj",
+      "projectUniqueName": "C:\\Code\\CDSDemo\\ButtPillowCDS\\WeatherStationUnitTests\\WeatherStationUnitTests.csproj",
       "projectName": "WeatherStationUnitTests",
-      "projectPath": "C:\\code\\ButtPillowCDS\\WeatherStationUnitTests\\WeatherStationUnitTests.csproj",
-      "packagesPath": "C:\\Users\\ryanm\\.nuget\\packages\\",
-      "outputPath": "C:\\code\\ButtPillowCDS\\WeatherStationUnitTests\\obj\\",
+      "projectPath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\WeatherStationUnitTests\\WeatherStationUnitTests.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\WeatherStationUnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ryanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5697,8 +5697,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\code\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj": {
-              "projectPath": "C:\\code\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj"
+            "C:\\Code\\CDSDemo\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj": {
+              "projectPath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj"
             }
           }
         }
