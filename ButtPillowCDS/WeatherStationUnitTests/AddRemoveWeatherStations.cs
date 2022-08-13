@@ -111,6 +111,33 @@ namespace WeatherStationUnitTests
             WeatherStationManager.AddWeatherStation("AB", 1111, 1111);
             WeatherController WC = new WeatherController();
             WC.Post(WU);
+            Assert.AreEqual(1, WeatherStationManager.WeatherStations.Count);
+
+
+        }
+
+        /// <summary>
+        /// This is perfectly valid although it shouldn't be because its colder than absolute zero
+        /// </summary>
+        [TestMethod]
+        public void AddTempretureBelowAbsoluteZeroNoCDS()
+        {
+            WeatherUpdate WU = new WeatherUpdate();
+            WU.Date = DateTime.Now;
+            WU.Easting = 1111;
+            WU.Northing = 1111;
+            WU.SensorID = 1;
+            WU.MeterSquareIdentifier = "AB";
+            WU.TemperatureF = -500;
+
+
+            WeatherStationManager.AddWeatherStation("AB", 1111, 1111);
+            WeatherController WC = new WeatherController();
+            WC.NoCDSPost(WU);
+
+            int result = WeatherStationManager.WeatherStations[0].WeatherUpdates[0].TemperatureF;
+
+            Assert.AreEqual(WU.TemperatureF, result);
 
 
         }

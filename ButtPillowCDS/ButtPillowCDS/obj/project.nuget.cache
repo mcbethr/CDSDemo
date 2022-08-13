@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ETWDVgAJP8yEX53ewkYfmHMv5y8v5YHDg7vNHFkd+hXaEWxvSkQ1dTPUNbjO5QSsOxodHsZfhvM/BMkbVfy6Hg==",
+  "dgSpecHash": "P+0ffBgurqohQnRzNHqnCelVcn1XGCn995yDAZ1W6hnlpSH5kN3jxZrYXAp/jEnr8YwgxD1XzeKbcUKzkYmAcg==",
   "success": true,
-  "projectFilePath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\code\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -5671,21 +5671,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ryanm\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ryanm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\CDSDemo\\ButtPillowCDS\\WeatherStationUnitTests\\WeatherStationUnitTests.csproj",
+      "projectUniqueName": "C:\\code\\ButtPillowCDS\\WeatherStationUnitTests\\WeatherStationUnitTests.csproj",
       "projectName": "WeatherStationUnitTests",
-      "projectPath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\WeatherStationUnitTests\\WeatherStationUnitTests.csproj",
+      "projectPath": "C:\\code\\ButtPillowCDS\\WeatherStationUnitTests\\WeatherStationUnitTests.csproj",
       "packagesPath": "C:\\Users\\ryanm\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\WeatherStationUnitTests\\obj\\",
+      "outputPath": "C:\\code\\ButtPillowCDS\\WeatherStationUnitTests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\ryanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -5699,9 +5695,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Code\\CDSDemo\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj": {
-              "projectPath": "C:\\Code\\CDSDemo\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj"
+            "C:\\code\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj": {
+              "projectPath": "C:\\code\\ButtPillowCDS\\ButtPillowCDS\\ButtPillowCDS.csproj"
             }
           }
         }
@@ -5714,6 +5711,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MSTest.TestAdapter": {
             "target": "Package",
@@ -5742,15 +5740,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
           },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
+        "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

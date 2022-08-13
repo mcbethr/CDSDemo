@@ -28,6 +28,16 @@ namespace ButtPillowCDS.Controllers
 
         }
 
-    
+        // NoCDSPost api/<controller>
+        [HttpPost]
+        public void NoCDSPost([FromBody] WeatherUpdate value)
+        {
+
+                WeatherStationManager.UpdateWeather(value);
+            
+
+        }
+
+
     }
 }
