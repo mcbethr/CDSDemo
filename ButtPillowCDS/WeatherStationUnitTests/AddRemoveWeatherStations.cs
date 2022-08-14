@@ -142,6 +142,33 @@ namespace WeatherStationUnitTests
 
         }
 
+
+        /// <summary>
+        /// Send a Valud Temp
+        /// </summary>
+        [TestMethod]
+        public void AddTempreture72DegreesCDS()
+        {
+            WeatherUpdate WU = new WeatherUpdate();
+            WU.Date = DateTime.Now;
+            WU.Easting = 1111;
+            WU.Northing = 1111;
+            WU.SensorID = 1;
+            WU.MeterSquareIdentifier = "AB";
+            WU.TemperatureF = 72;
+
+
+            WeatherStationManager.AddWeatherStation("AB", 1111, 1111);
+            WeatherController WC = new WeatherController();
+            WC.NoCDSPost(WU);
+
+            int result = WeatherStationManager.WeatherStations[0].WeatherUpdates[0].TemperatureF;
+
+            Assert.AreEqual(WU.TemperatureF, result);
+
+
+        }
+
         [TestCleanup]
         public void TearDown()
         {
